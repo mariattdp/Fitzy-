@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6a8cf">
+  <meta name="description" content="Fitzy — seu guarda-roupa, seu estilo, suas combinações.">
+  <title>Fitzy — Vista sua personalidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement">✦ Seu estilo, suas possibilidades. Bem-vinda à Fitzy! ✦</div>
+  <header class="site-header">
+    <a class="brand brand-logo" href="#inicio" aria-label="Fitzy início"><img src="logo-fitzy.png" alt="Logo Fitzy"></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">☰</button>
+    <nav id="mainNav">
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#recursos">Recursos</a>
+      <a href="#planos">Planos</a>
+      <a href="#parceiros">Parceiros</a>
+    </nav>
+    <a class="button button-small" href="#montar-look">Montar meu look <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="sparkle">✦</span> MODA COM INTENÇÃO</span>
+        <h1>Seu guarda-roupa.<br><em>Mil possibilidades.</em></h1>
+        <p>Descubra combinações incríveis com as peças que você já tem. A Fitzy une tecnologia, inteligência artificial e seu estilo para deixar o vestir mais fácil, econômico e consciente.</p>
+        <div class="hero-actions">
+          <a class="button" href="#montar-look">Descobrir meu estilo <span>→</span></a>
+          <a class="text-link" href="#como-funciona">Conheça a Fitzy ↓</a>
+        </div>
+        <div class="hero-note"><span class="avatar-stack">♡ ✿ ✧</span><span>Mais criatividade, menos compras por impulso.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="pink-orbit orbit-one"></div><div class="pink-orbit orbit-two"></div>
+        <div class="hero-card card-back"><span>YOUR STYLE</span><b>✿</b></div>
+        <div class="hero-card card-front">
+          <div class="look-top"><span>LOOK DO DIA</span><span class="heart">♡</span></div>
+          <div class="outfit-illustration">
+            <div class="hanger">⌁</div>
+            <div class="shirt"></div><div class="pants"></div><div class="bag">♡</div>
+          </div>
+          <div class="look-caption"><strong>Romântica & casual</strong><small>Uma combinação com a sua essência.</small></div>
+          <div class="match"><span>♡</span> 98% combina com você</div>
+        </div>
+        <span class="floating flower">✿</span><span class="floating star">✧</span>
+        <div class="hero-sticker">feito para<br><b>VOCÊ!</b></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Benefícios"><span>SEU ESTILO ✦ SUAS REGRAS</span><span>MENOS DESPERDÍCIO ✦ MAIS CRIATIVIDADE</span><span>MODA CONSCIENTE ✦</span></section>
+
+    <section class="section intro" id="como-funciona">
+      <div class="section-heading">
+        <span class="eyebrow">OLÁ, ESTILOSA!</span>
+        <h2>Uma nova forma de olhar<br>para o que <em>você já tem.</em></h2>
+        <p>A Fitzy é uma plataforma de organização e consultoria de estilo digital que transforma seu guarda-roupa em um espaço de possibilidades.</p>
+      </div>
+      <div class="steps">
+        <article class="step"><span class="step-number">01</span><div class="step-icon">♡</div><h3>Cadastre suas peças</h3><p>Monte seu guarda-roupa virtual com fotos e informações das roupas que você possui.</p></article>
+        <article class="step"><span class="step-number">02</span><div class="step-icon">✧</div><h3>Descubra combinações</h3><p>A inteligência artificial considera suas preferências e sugere looks para diferentes ocasiões.</p></article>
+        <article class="step"><span class="step-number">03</span><div class="step-icon">✿</div><h3>Vista sua identidade</h3><p>Organize suas escolhas, economize e aproveite melhor cada peça do seu armário.</p></article>
+      </div>
+    </section>
+
+    <section class="try-section" id="montar-look">
+      <div class="try-copy">
+        <span class="eyebrow">SEU MOMENTO FITZY</span>
+        <h2>Qual é a vibe<br>de hoje?</h2>
+        <p>Experimente a demonstração de recomendações. Escolha uma ocasião e um estilo para receber uma ideia de look.</p>
+        <div class="tiny-note">✦ Demonstração ilustrativa da proposta do aplicativo.</div>
+      </div>
+      <form class="look-form" id="lookForm">
+        <label for="occasion">Para qual ocasião?</label>
+        <select id="occasion" required>
+          <option value="Faculdade ou escola">Faculdade ou escola</option>
+          <option value="Trabalho">Trabalho</option>
+          <option value="Passeio">Passeio</option>
+          <option value="Encontro">Encontro</option>
+          <option value="Evento especial">Evento especial</option>
+        </select>
+        <label for="style">Qual estilo combina com você?</label>
+        <select id="style" required>
+          <option value="Romântico">Romântico</option><option value="Casual">Casual</option>
+          <option value="Clássico">Clássico</option><option value="Moderno">Moderno</option>
+          <option value="Minimalista">Minimalista</option><option value="Criativo">Criativo</option>
+        </select>
+        <label for="color">Uma cor que você quer usar</label>
+        <select id="color">
+          <option>Rosa</option><option>Preto</option><option>Branco</option><option>Azul</option><option>Jeans</option><option>Neutros</option><option>Surpreenda-me</option>
+        </select>
+        <button class="button full" type="submit">Criar sugestão de look <span>✧</span></button>
+        <div class="look-result" id="lookResult" aria-live="polite"><span class="result-icon">♡</span><p>Sua sugestão aparecerá aqui. Vamos brincar de stylist?</p></div>
+      </form>
+    </section>
+
+    <section class="section features" id="recursos">
+      <div class="section-heading centered"><span class="eyebrow">O UNIVERSO FITZY</span><h2>Tudo pensado para<br><em>facilitar sua rotina.</em></h2></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-large"><div class="feature-symbol">✧</div><span class="mini-label">INTELIGÊNCIA ARTIFICIAL</span><h3>Looks com a sua personalidade</h3><p>Monte looks personalizados com as roupas que você já possui, usando preferências e uso real das peças.</p><span class="feature-decoration">fitzy</span></article>
+        <article class="feature-card"><div class="feature-symbol">♡</div><span class="mini-label">ORGANIZAÇÃO</span><h3>Seu guarda-roupa em ordem</h3><p>Identifique peças esquecidas e organize combinações para diferentes ocasiões e compromissos.</p></article>
+        <article class="feature-card"><div class="feature-symbol">₊˚</div><span class="mini-label">CONSUMO CONSCIENTE</span><h3>Compre com intenção</h3><p>Economize dinheiro, evite compras desnecessárias e aproveite melhor o que já faz parte do seu armário.</p></article>
+        <article class="feature-card"><div class="feature-symbol">✿</div><span class="mini-label">APOIO ESPECIALIZADO</span><h3>Seu estilo com orientação</h3><p>Consultores de moda e profissionais de imagem disponíveis em tempo integral para atender à demanda.</p></article>
+      </div>
+    </section>
+
+    <section class="section canvas-section">
+      <div class="section-heading centered"><span class="eyebrow">POR TRÁS DA IDEIA</span><h2>O modelo de negócio<br><em>da Fitzy.</em></h2><p>Uma visão completa da proposta, dos recursos e da operação.</p></div>
+      <div class="canvas-grid">
+        <article class="canvas-card partners" id="parceiros"><span class="canvas-icon">♡</span><h3>Parceiros</h3><ul><li>Provedores de hospedagem e banco de dados.</li><li>Empresas de tecnologia e inteligência artificial.</li><li>Lojas de roupas, calçados e acessórios.</li><li>Consultores de moda e profissionais de imagem.</li><li>Criadores de conteúdo de moda.</li></ul></article>
+        <article class="canvas-card"><span class="canvas-icon">✧</span><h3>Atividades-chave</h3><ul><li>Desenvolver e atualizar o aplicativo.</li><li>Criar o sistema de recomendação de looks.</li><li>Analisar as preferências e os registros de uso dos usuários.</li><li>Manter a base de dados segura.</li><li>Divulgar o aplicativo e conquistar usuários.</li></ul><h4>Recursos-chave</h4><ul><li>Aplicativo para celular.</li><li>Banco de dados de roupas, combinações e preferências.</li><li>Algoritmo de recomendação personalizado.</li><li>Servidores e ferramentas de desenvolvimento e software.</li><li>Equipe de desenvolvimento, design e marketing.</li><li>Identidade visual e marca FITZY.</li></ul></article>
+        <article class="canvas-card value"><span class="canvas-icon">✿</span><h3>Proposta de valor</h3><ul><li>Monte looks personalizados com as roupas que o usuário já possui.</li><li>Aprende com as preferências e o uso real das peças.</li><li>Identifica roupas esquecidas no guarda-roupa.</li><li>Ajuda a economizar dinheiro e evitar compras desnecessárias.</li><li>Organiza combinações para diferentes ocasiões e compromissos.</li><li>Consultores de moda e profissionais de imagem disponíveis em tempo integral para atender à demanda.</li><li>Assistente de IA integrado ao sistema.</li></ul></article>
+        <article class="canvas-card"><span class="canvas-icon">☏</span><h3>Relacionamento com o cliente</h3><ul><li>Recomendações personalizadas e automáticas.</li><li>Atendimento por chat ou e-mail.</li><li>Notificações com sugestões de looks.</li><li>Pesquisas de satisfação e coleta de feedback.</li><li>Programa de benefícios para assinantes.</li></ul><h4>Canais</h4><ul><li>Aplicativos para Android e iOS.</li><li>Redes sociais, como Instagram, TikTok e Pinterest.</li><li>Parcerias com influenciadores de moda.</li><li>Site oficial para divulgação e cadastro.</li><li>Campanhas em faculdades, escolas e comunidades de moda.</li></ul></article>
+        <article class="canvas-card segments"><span class="canvas-icon">♡</span><h3>Segmentos com cliente</h3><ul><li>Jovens e adultos interessados em moda.</li><li>Pessoas que possuem muitas roupas e têm dificuldade para combiná-las.</li><li>Consumidores que desejam economizar nas compras.</li><li>Pessoas que querem organizar o guarda-roupa.</li><li>Usuários interessados em estilo personalizado e consumo consciente.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section money-section">
+      <div class="money-card"><span class="eyebrow">INVESTIMENTO E OPERAÇÃO</span><h2>Estrutura de <em>custos.</em></h2>
+        <div class="cost-highlight"><div><small>Investimento inicial</small><strong>R$ 6.100,00</strong></div><div><small>Custo mensal estimado</small><strong>R$ 1.000,00</strong></div></div>
+        <p class="disclaimer">Valores apresentados conforme o planejamento inicial da Fitzy. A composição detalhada dos itens de custo deve ser validada no orçamento operacional.</p>
+      </div>
+      <div class="money-card revenue"><span class="eyebrow">COMO A FITZY SE SUSTENTA</span><h2>Fluxos de <em>receita.</em></h2>
+        <ul><li><b>Plano gratuito:</b> acesso a 5 avaliações de look por mês, com anúncio.</li><li><b>Assinatura premium:</b> recursos avançados por mensalidade de <strong>R$ 60,90</strong> por mês.</li><li><b>Parcerias comerciais:</b> comissões por compras realizadas por indicação do aplicativo.</li><li><b>Consultoria de estilo:</b> acesso pago a profissionais parceiros.</li><li><b>Planos para empresas:</b> ferramentas para lojas e consultores de moda.</li></ul>
+      </div>
+    </section>
+
+    <section class="pricing section" id="planos">
+      <div class="section-heading centered"><span class="eyebrow">ESCOLHA SEU JEITO DE USAR</span><h2>Um plano para cada<br><em>momento.</em></h2></div>
+      <div class="price-grid">
+        <article class="price-card"><span class="plan-name">FITZY FREE</span><h3>Gratuito</h3><p class="price">R$ 0 <small>/ sempre</small></p><p>Para começar a explorar seu estilo.</p><ul><li>5 avaliações de look por mês</li><li>Recomendações com anúncio</li><li>Organização básica do guarda-roupa</li></ul><a href="#montar-look" class="button button-outline">Experimentar</a></article>
+        <article class="price-card premium"><span class="popular">MAIS POSSIBILIDADES ✦</span><span class="plan-name">FITZY PREMIUM</span><h3>Seu estilo sem limites</h3><p class="price">R$ 60,90 <small>/ mês</small></p><p>Para quem quer aproveitar recursos avançados.</p><ul><li>Recursos avançados</li><li>Experiência premium</li><li>Mais possibilidades de personalização</li></ul><a href="#montar-look" class="button">Quero conhecer <span>→</span></a></article>
+      </div>
+      <p class="pricing-note">Os planos representam a proposta comercial do projeto; a contratação e os pagamentos ainda não estão habilitados nesta demonstração.</p>
+    </section>
+
+    <section class="closing">
+      <div class="closing-flower">✿</div><span class="eyebrow">SEU ARMÁRIO, NOVOS OLHARES</span><h2>Vista quem você é.<br><em>Todos os dias.</em></h2><a href="#montar-look" class="button">Criar meu look <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#inicio">fitzy<span>✦</span></a><p>Moda inteligente, personalizada e consciente.</p><span>© 2026 Fitzy · Projeto conceitual</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
